@@ -1,0 +1,8 @@
+@mixin bg($bg, $col) {
+  background-color: $bg;
+  color: $col;
+}
+@mixin ptpb($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}

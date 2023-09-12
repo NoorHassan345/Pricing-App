@@ -1,0 +1,45 @@
+@import "../mixin";
+@import "../variables";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-weight: 700;
+  font-size: 13px;
+  color: $grey;
+
+  .Pricing-Main {
+    background-color: #f7f7ff;
+  }
+
+  @media screen and (min-width: 995px) {
+    .centered-div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+    }
+  }
+  .background-image {
+    background-image: url("../images/bg-top.svg"),
+      url("../images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    background-size: 20%, 20%;
+    background-position-y: top, bottom;
+
+    .ourPricing {
+      @include ptpb(30px, 0px);
+      font-size: large;
+      font-weight: 700;
+    }
+    .annualMonth {
+      @include ptpb(20px, 0px);
+    }
+  }
+  .map {
+    @include ptpb(40px, 40px);
+  }
+}
