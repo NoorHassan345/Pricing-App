@@ -1,0 +1,20 @@
+@mixin bg($bg, $col) {
+  background-color: $bg;
+  color: $col;
+}
+@mixin ptpb($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+@mixin mtmb($mt, $mb) {
+  margin-top: $mt;
+  margin-bottom: $mb;
+}
+@mixin mlmr($ml, $mr) {
+  margin-left: $ml;
+  margin-right: $mr;
+}
+@mixin plpr($pl, $pr) {
+  padding-left: $pl;
+  padding-right: $pr;
+}

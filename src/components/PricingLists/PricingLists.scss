@@ -1,0 +1,77 @@
+@import "../../mixin";
+@import "../../variables";
+
+.PricingLists {
+  width: 27%;
+
+  
+
+  @media screen and (max-width: 996px) {
+    @include mlmr(auto, auto);
+    width: 75%;
+    margin-bottom: 30px;
+  }
+  .PricingLists-Main {
+    @include plpr(15px, 15px);
+    border-radius: 10px;
+    text-align: center;
+
+    .font-price {
+      font-weight: bolder;
+      padding-bottom: 10px;
+
+      .price {
+        font-weight: bolder;
+      }
+    }
+    .pading-botom {
+      padding-bottom: 15px;
+    }
+  }
+}
+.marginAll {
+  margin-top: 15px;
+}
+.bgIndex1 {
+  @include bg($blue, white);
+  @include ptpb(40px, 40px);
+}
+
+.bgAll {
+  @include bg(white, $grey);
+  @include ptpb(25px, 25px);
+}
+
+.borderIndex1 {
+  border-bottom: 1px dotted white;
+}
+.borderAll {
+  border-bottom: 1px dotted $grey;
+}
+.buttonIndex1 {
+  @include bg(white, $blue);
+  border: none;
+}
+.buttonAll {
+  @include bg($blue, white);
+  border: none;
+}
+.buttonOnMouseIndex1 {
+  @include bg($blue, white);
+  border: 1px solid white;
+}
+.buttonOnMouseAll {
+  @include bg(white, $blue);
+  border: 1px solid $blue;
+}
+.buton {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.font-btn {
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 5px;
+}

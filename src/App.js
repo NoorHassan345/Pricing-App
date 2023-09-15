@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Pricing from './Features/Pricing/pricing/Pricing';
+import Pricing from './components/Pricing/Pricing';
 
 
 function App() {

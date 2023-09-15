@@ -1,0 +1,61 @@
+@import "../../_mixin";
+@import "../../variables";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-weight: 700;
+  font-size: 13px;
+  color: $grey;
+
+  .Pricing-Main {
+    background-color: #f7f7ff;
+    margin: auto;
+    width: 80%;
+
+    @media screen and (min-width: 995px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+    }
+    background-image: url("../../assets/images/bg-top.svg"),
+      url("../../assets/images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    background-size: 20%, 20%;
+    background-position-y: top, bottom;
+
+    .ourPricing {
+      @include ptpb(30px, 0px);
+      font-size: large;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .AnnualMonth {
+    @include ptpb(20px, 0px);
+    display: flex;
+    justify-content: center;
+
+    .Annual {
+      margin-right: 13px;
+    }
+    .Month {
+      margin-left: 13px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.map {
+  @include ptpb(40px, 40px);
+
+  @media screen and (min-width: 995px) {
+    display: flex;
+    justify-content: center;
+  }
+}
